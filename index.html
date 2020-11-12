@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    /*let year = parseInt(prompt("Nhập năm cần kiểm tra"));
+
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                alert(year + " là một năm Nhuận");
+            } else {
+                alert(year + " không phải là một năm Nhuận");
+            }
+        } else {
+            alert(year + " là một năm Nhuận");
+        }
+    } else {
+        alert(year + " không phải là một năm Nhuận");
+    }*/
+
+    let year = parseInt(prompt("Nhập năm cần kiểm tra:"));
+    let isLeapYear = false;
+
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                isLeapYear = true;
+            }
+        } else {
+            isLeapYear = true;
+        }
+    }
+
+    if (isLeapYear) {
+        alert(year + " là một năm Nhuận");
+    } else {
+        alert(year + " không phải là một năm Nhuận");
+    }
+</script>
+<body>
+
+</body>
+</html>
